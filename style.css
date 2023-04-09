@@ -1,0 +1,25 @@
+html {
+    background-color: rgb(220, 216, 216);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #f0821a;
+    color: #fff;
+}
+
+.navbar {
+    text-align:;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    background-color: #f0821a;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
