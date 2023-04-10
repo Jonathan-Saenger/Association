@@ -1,23 +1,41 @@
-html {
-    background-color: rgb(220, 216, 216);
+
+h1,h2 {
+background-color: #f0821a;
+text-align: center;
 }
 
-h1 {
+img {
+    width: 70px;
+    height: 70px;
+    aspect-ratio: 2;
+    object-fit: cover;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 50%,70% 100%,30% 100%,0 50%);
+}
+
+#footer {
     display: flex;
-    justify-content: center;
-    background-color: #f0821a;
-    color: #fff;
-}
-
-.navbar {
-    text-align:;
+    background: linear-gradient(70deg, #f0821a, white)
 }
 
 #contact {
     display: flex;
-    justify-content: center;
-    background-color: #f0821a;
     color: #fff;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 30px;
+
+}
+
+/*  #commmentaire  {
+    display: flex1;
+    color: #fff;
+    font: bold;
+}
+
+#logo {
+    display: flex2;
+    color: #fff;
+    font: bold;
 }
 
 ul {
