@@ -1,12 +1,15 @@
 
-h1,h2 {
+h1 {
 background-color: #f0821a;
 text-align: center;
+aspect-ratio: 25;
+object-fit: cover;
+clip-path: polygon(30% 0%, 70% 0%, 100% 50%,70% 100%,30% 100%,0 50%);
 }
 
 img {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     aspect-ratio: 2;
     object-fit: cover;
     clip-path: polygon(30% 0%, 70% 0%, 100% 50%,70% 100%,30% 100%,0 50%);
