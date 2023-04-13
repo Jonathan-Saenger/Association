@@ -22,23 +22,19 @@
    font-style: italic;
  }
 
-.navbar {
-background-color: #ef7d11;
-}
-
-.logo {
-
+ .partenaires {
+  padding-left: 10px;
+  font-family: Arial;
+  font-size: 28px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  color: #ef7d11;
+  font-weight: bold;
+  text-decoration: overline;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
   }
-
-
-/*img {
-    width: 40px;
-    height: 40px;
-    aspect-ratio: 2;
-    object-fit: cover;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 50%,70% 100%,30% 100%,0 50%);
-}*/
-
 #footer {
     display: flex;
     background: linear-gradient(70deg, #f0821a, white)
