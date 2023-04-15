@@ -5,12 +5,24 @@
   list-style: none;
 }
 
-header {
-  padding-bottom: 20px;
-}
-
 body {
   font-family: Arial;
+}
+
+.reseaux {
+  position: absolute;
+  align-items: end;
+  bottom: 200px;
+  right: 5px;
+}
+/* à corriger */
+.reseau img {
+  background-color: #ef7d11;
+  border: #ef7d11;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .navbar {
@@ -28,12 +40,13 @@ body {
 }
 
 .navbar img {
-  width: 200px;
+  width: 405px;
   height: 105px;
 }
 
 .navbar .nav-links ul {
   display: flex;
+  font-size: large;
 }
 
 .navbar .nav-links ul li {
@@ -53,7 +66,35 @@ body {
   right: 35px;
 }
 
-@media screen and (max-width: 940px) {
+.parcdessports {
+width: 1550px;
+height: 500px;
+padding-bottom: 10px;
+}
+
+.parcdessports .slogan {
+  background: rgba(246, 105, 40, 0.622);
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  color: white;
+  width: 70%;
+}
+
+
+
+
+
+@media screen and (max-width: 1183px) {
+  .reseaux {
+    position: absolute;
+    display: flex;
+  }
+
   .navbar {
     padding: 0;
   }
@@ -95,45 +136,7 @@ body {
   }
 }
 
-#titre {
-  display: flex;
-}
-
-.enf1 {
-    display: flex;
-    justify-content: flex-start;
-    width: 250px;
-    height: 130px;
-}
-
-.enf2 {
-   display: flex;
-   justify-content: flex-end;
-   padding-top: 20px;
-   font-family: Arial;
-   font-size: 50px;
-   letter-spacing: 0px;
-   word-spacing: 0px;
-   color: #ef7d11;
-   font-weight: normal;
-   font-style: italic;
- }
-
- .partenaires {
-  padding-left: 10px;
-  padding-bottom: 10px;
-  font-family: Arial;
-  font-size: 28px;
-  letter-spacing: 2px;
-  word-spacing: 1px;
-  color: #ef7d11;
-  font-weight: bold;
-  text-decoration: overline;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  }
-#footer {
+footer {
     display: flex;
     background: linear-gradient(70deg, #f0821a, white)
 }
@@ -146,4 +149,3 @@ body {
     padding-bottom: 30px;
 
 }
-
