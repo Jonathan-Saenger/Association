@@ -9,22 +9,6 @@ body {
   font-family: Arial;
 }
 
-.reseaux {
-  position: absolute;
-  align-items: end;
-  bottom: 200px;
-  right: 5px;
-}
-/* à corriger */
-.reseau img {
-  background-color: #ef7d11;
-  border: #ef7d11;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-
 .navbar {
   position: absolute;
   padding: 20px;
@@ -85,15 +69,27 @@ padding-bottom: 10px;
   width: 70%;
 }
 
+.main {
+  display: flex;
+}
 
+.presentation {
+display: block;
+}
 
+.partenaires {
+display: block;
+}
 
+.actions {
+display: block;
+}
+
+.info {
+
+}
 
 @media screen and (max-width: 1183px) {
-  .reseaux {
-    position: absolute;
-    display: flex;
-  }
 
   .navbar {
     padding: 0;
@@ -134,18 +130,33 @@ padding-bottom: 10px;
     margin: 25px 0;
     font-size: 1,2em;
   }
+
+  .reseaux {
+    position: relative;
+    display: inline;
+    justify-content: left;
+    align-items: flex-start;
+  }
 }
 
 footer {
     display: flex;
-    background: linear-gradient(70deg, #f0821a, white)
+    background: linear-gradient(90deg, rgba(239,125,17,1) 0%, rgba(239,125,16,1) 13%, rgba(255,255,255,1) 85%);
 }
 
 #contact {
-    display: flex;
+    justify-content: left;
+    display: inline;
     color: #fff;
     font-weight: bold;
     padding-left: 10px;
-    padding-bottom: 30px;
+}
 
+.reseaux {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
