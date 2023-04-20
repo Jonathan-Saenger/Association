@@ -9,6 +9,8 @@ body {
   font-family: Arial;
 }
 
+/* début de la navbar */
+
 .navbar {
   position: absolute;
   padding: 20px;
@@ -50,6 +52,8 @@ body {
   right: 35px;
 }
 
+/* fin de la navbar */
+
 .parcdessports {
 width: 1510px;
 height: 500px;
@@ -77,6 +81,8 @@ padding-bottom: 10px;
 
 }
 
+/* Contenu central */
+
 h2 {
   text-align: center;
   text-shadow: -2px 2px 10px #FF7800;
@@ -84,22 +90,41 @@ h2 {
 
 .actu {
 display: block;
+padding: 10px;
 background-color:#D3D3D3	;
 margin: 10px auto;
 text-align: justify;
 width: 1300px;
-height: 200px;
+height: 400px;
 border: 1px solid black;
+}
+
+.titreactu {
+  text-align: left;
+  text-decoration: dotted;
+  font-size: large;
+  text-decoration-line: overline;
+  font-style: italic;
 }
 
 .association {
 display: block;
 background: #D3D3D3;
+padding: 10px;
 margin: 10px auto;
 text-align: justify;
 width: 1300px;
-height: 200px;
+height: 400px;
 border: 1px solid black;
+}
+
+.texteassoc {
+  column-gap: 20px;
+  column-count: 3;
+}
+
+h3 {
+  text-align: center;
 }
 
 .cartes {
@@ -115,6 +140,8 @@ border: 1px solid black;
   justify-content: center;
   flex-direction: row;
 }
+
+/* Fin du contenu central */
 
 @media screen and (max-width: 1183px) {
 
@@ -194,3 +221,15 @@ border: 1px solid black;
     font-weight: bold;
     padding-left: 10px;
 }
+
+/* page Présentation de l'Association */
+.présentationassoc {
+  display: block;
+  background: #D3D3D3;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: justify;
+  width: 1300px;
+  height: 400px;
+  border: 1px solid black;
+  }
