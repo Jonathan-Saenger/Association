@@ -48,18 +48,13 @@ body {
 .navbar .nav-links ul li {
   margin: 0 25px;
 }
-
-.navbar .nav-links ul li.menu {
-  color: black;
-  font-weight: 600;
+.burger {
+  display: none;
 }
 
-.navbar .menu-icone {
-  display: none;
-  width: 35px;
-  position: absolute;
-  top: 30px;
-  right: 35px;
+ /* création du burger menu */
+@media  screen and (max-width : 836px) {
+ 
 }
 
 .button {
@@ -167,7 +162,7 @@ border-radius: 1%;
 }
 /*ecran tablette */
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  ..actu {
+  .actu {
     width: 100%;
   }
 }
@@ -205,7 +200,7 @@ border-radius: 1%;
 }
 /*ecran tablette */
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  ..association {
+  .association {
     width: 100%;
   }
 }
@@ -241,35 +236,27 @@ h3 {
 
 /* Fin du contenu central */
 
-/*.footer {
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    background: linear-gradient(90deg, rgba(239,125,17,1) 0%, rgba(239,125,16,1) 13%, rgba(255,255,255,1) 85%);
-}
-
-.contact {
-    display: inline;
-    color: #fff;
-    font-weight: bold;
-    padding-left: 10px;
-}*/
+/*.footer  */
 
 footer {
-  background-color: linear-gradient(90deg, rgba(239,125,17,1) 0%, rgba(239,125,16,1) 13%, rgba(255,255,255,1) 85%);
+  background-color: #eaeaea;
   padding: 40px 0;
+}
+footer a {
+  text-decoration: none;
 }
 
 footer h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #ef7c11;
+  margin-bottom: 10px;
+  color: #000000;
 }
 
 footer p {
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 footer ul {
