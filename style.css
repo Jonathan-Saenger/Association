@@ -48,13 +48,118 @@ body {
 .navbar .nav-links ul li {
   margin: 0 25px;
 }
-.burger {
-  display: none;
-}
+
+ .nav-toggle {
+    display: none;
+  }
 
  /* création du burger menu */
 @media  screen and (max-width : 836px) {
  
+  .nav-toggle-label {
+    position: fixed;
+    top: 25px;
+    right: 15px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background-color: #333;
+    height: 5px;
+    width: 30px;
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+  }
+  
+  .nav-toggle-label span::before {
+    top: -8px;
+  }
+  
+  .nav-toggle-label span::after {
+    top: 8px;
+  }
+  
+  .nav-toggle:checked + .nav-toggle-label span {
+    transform: rotate(45deg);
+  }
+  
+  .nav-toggle:checked + .nav-toggle-label span::before {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .nav-toggle:checked + .nav-toggle-label span::after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 232px;
+    background-color: #ef7c11;
+    padding: 10px;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+  .parcdessports {
+   margin: 0;
+   width: 100%;
+   padding-bottom: 20%;
+  }
+
+  .navbar .logo {
+  display: none;
+  }
+
+  .imgparcdessports {
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin: 0;
+  }
+
+  .actu {
+  z-index: 1;
+  }
+
+  .nav-toggle:checked ~ .navbar {
+    left: 0;
+  }
+  
+  .navbar a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 0 25px;
+  }
+
+  .nav-item a:hover {
+    background-color: #fff;
+    color: #333;
+  }
 }
 
 .button {
